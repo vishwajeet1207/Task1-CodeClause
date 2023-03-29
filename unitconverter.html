@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css"></head>
+<body>
+    <div class="box">
+    <h1>Unit Converter</h1>
+    
+    <div class="container">
+    <div class="contain">
+        <center>Time</center>
+        <label for="from">From</label> <br>
+        <input type="number"  id="from" class="input">
+        <select id="from-unit">
+            <option value="Sec">Seconds</option>
+            <option value="Min">Minutes</option>
+            <option value="Hour">Hours</option>
+            <option value="Day">Days</option>
+            <option value="Week">Weeks</option>
+        </select>
+        <br><br>
+        <label for="to">To</label> <br>
+        <input type="number" id="to" name="to" class="input">
+        <select id="to-unit" >
+            <option value="Sec">Seconds</option>
+            <option value="Min">Minutes</option>
+            <option value="Hour">Hours</option>
+            <option value="Day">Days</option>
+            <option value="Week">Weeks</option>
+        </select>
+        <br><br>
+        <button onclick="convertTime()">Convert</button>
+    </div>
+    
+    
+    <div class="contain">
+        <center>Length</center>
+        <label for="from">From</label> <br>
+        <input type="number"  id="froml" class="input" >
+        <select id="froml-unit">
+            <option value="mm">Millimeters</option>
+            <option value="cm">Centimeters</option>
+            <option value="m">Meters</option>
+            <option value="km">Kilometers</option>
+            <option value="in">Inches</option>
+            <option value="ft">Feet</option>
+        </select>
+        <br><br>
+        <label for="to">To</label> <br>
+        <input type="number" id="tol"  class="input" >
+        <select id="tol-unit" >
+            <option value="mm">Millimeters</option>
+            <option value="cm">Centimeters</option>
+            <option value="m">Meters</option>
+            <option value="km">Kilometers</option>
+            <option value="in">Inches</option>
+            <option value="ft">Feet</option>
+        </select>  
+        <br><br>
+        <button onclick="Length()">Convert</button>   
+    </div>
+    
+    
+    <div class="contain">
+        <center>Weight</center>
+        <label for="from">From</label> <br>
+        <input type="number" id="fromw"  class="input" >
+        <select id="fromw-unit">
+            <option value="mg">Milligrams</option>
+            <option value="g">Grams</option>
+            <option value="kg">Kilograms</option>
+        </select>
+        <br><br>
+        <label for="to">To</label> <br>
+        <input type="number" id="tow"  class="input" >
+        <select id="tow-unit" >
+            <option value="mg">Milligrams</option>
+            <option value="g">Grams</option>
+            <option value="kg">Kilograms</option>
+        </select>
+        <br><br>
+        <button onclick="weight()">Convert</button>
+    </div>
+    
+    
+    <div class="contain">
+        <center>Temperature</center>
+        <label for="from">From</label> <br>
+        <input type="number" id="fromt"  class="input" >
+        <select id="fromt-unit">
+            <option value="C">Celsius</option>
+            <option value="F">Fahrenheit</option>
+            <option value="K">Kelvin</option>
+        </select>
+        <br><br>
+        <label for="output">To</label> <br>
+        <input type="number" id="tot"  class="input" >
+        <select id="tot-unit">
+            <option value="C">Celsius</option>
+            <option value="F">Fahrenheit</option>
+            <option value="K">Kelvin</option>
+        </select>
+        <br><br>
+        <button onclick="temperature()">Convert</button>
+    </div>
+    </div>
+    </div>  
+<script src="main.js"></script>
+</body>
+</html>
